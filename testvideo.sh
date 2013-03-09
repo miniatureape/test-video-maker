@@ -22,7 +22,7 @@ while getopts ":n:d" opt; do
 done
 
 shift $(($OPTIND - 1))
-output_file=${1:-out.mp4}
+output_file=${1:-out.webm}
 
 function createFrames() {
     for i in $(seq -f "%03g" 1 $2)
@@ -32,5 +32,5 @@ function createFrames() {
 }
 
 createFrames ${video_name} ${duration}
-ffmpeg -f image2 -r 1  -i '/tmp/%03d-frame.jpg' -c:v libx264 $output_file
+ffmpeg -f image2 -r 1  -i '/tmp/%03d-frame.jpg' -c:v libvpx $output_file
 rm /tmp/*-frame.jpg
