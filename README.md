@@ -1,8 +1,10 @@
-testvideo.sh
-===========
+# Testvideo.sh
+Creates webm test videos from the command line. 
 
-Creates webm test videos from the command line. This is useful for testing things like a video slideshow where the order is important.
+## Description 
+This is useful for testing things like a video slideshow where the order is important.
 
+## Ussage
 To use, install ffmpeg according to these instructions: https://ffmpeg.org/trac/ffmpeg/wiki/UbuntuCompilationGuide
 
 Then: 
