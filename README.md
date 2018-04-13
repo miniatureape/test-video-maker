@@ -4,8 +4,9 @@ Creates webm test videos from the command line.
 ## Description 
 This is useful for testing things like a video slideshow where the order is important.
 
-## Ussage
-To use, install ffmpeg according to these instructions: https://ffmpeg.org/trac/ffmpeg/wiki/UbuntuCompilationGuide
+## Usage
+
+To use, install ffmpeg `sudo apt-get install ffmpeg`
 
 Then: 
 
@@ -31,3 +32,7 @@ Specify output file
 ```
 
 will produce a 10 second long video called my-file
+
+## Notes
+
+I've only tested this on Ubuntu Linux.
